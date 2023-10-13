@@ -1,0 +1,70 @@
+.constructer {
+  display: flex;
+  flex: 100;
+}
+
+.menu {
+  flex: 20;
+}
+
+.lich-su{
+  width: 80%;
+  height: 80vh;
+  flex: 80;
+  font-size: 2.2vh;
+}
+
+/* CONTENT */
+
+.lich-su h1{
+  font-size: 3vh;
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+}
+
+.content-1{
+  display: flex;
+  margin-top: 3vh;
+  margin-left: 5%;
+  font-size: 3vh;
+}
+
+.content-1 p{
+  font-weight: bold;
+}
+
+.content-2{
+  margin-left: 5%;
+  margin-top: 2vh;
+  font-size: 3vh;
+}
+
+.content-2 p{
+  line-height: 5vh;
+  font-weight: bold;
+}
+
+
+/* media query */
+
+@media screen and (max-width: 1200px){
+
+  .lich-su h1{
+    font-size: 3vh;
+    margin-top: 2vh;
+  }
+
+  .content-1 p{
+    font-size: 2vh;
+  }
+
+  .content-2{
+    margin-top: 1vh;
+  }
+  .content-2 p{
+    font-size: 2vh;
+  }
+
+
+}

@@ -1,0 +1,59 @@
+<app-header></app-header>
+<div class="constructer">
+  <div class="menu">
+    <app-menu></app-menu>
+  </div>
+  <div class="lich-truc">
+    <h1>THỜI KHÓA BIỂU TRỰC</h1>
+    <div class="thoi-khoa-bieu">
+      <table border="" >
+        <thead>
+          <tr>
+            <th>Thứ 2</th>
+            <th>Thứ 3</th>
+            <th>Thứ 4</th>
+            <th>Thứ 5</th>
+            <th>Thứ 6</th>
+            <th>Thứ 7</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{getNameByDate('2')}}</td>
+            <td>{{getNameByDate('3')}}</td>
+            <td>{{getNameByDate('4')}}</td>
+            <td>{{getNameByDate('5')}}</td>
+            <td>{{getNameByDate('6')}}</td>
+            <td>{{getNameByDate('7')}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="dang-ky">
+      <h1>SỬA LỊCH TRỰC</h1>
+      <div class="content-dk">
+        <div>
+          <div style="position: relative;">
+            <label for="">Thứ</label>
+            <select [(ngModel)]="day" style="width: 10%; height: 30px; margin: 0 15px; position: absolute; top: 10px;">
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+            <label for="" style="margin-left: 75px;">Họ và tên:</label>
+            <input type="text" [(ngModel)]="name">
+            <br>
+            <label for="">Điện thoại</label>
+            <input type="text" [(ngModel)]="phone">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <button (click)="updateData()">ĐĂNG KÝ</button>
+    </div>
+  </div>
+</div>

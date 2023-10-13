@@ -1,0 +1,307 @@
+/* phần cần copy */
+.constructer {
+  display: flex;
+  flex: 100;
+}
+
+.menu {
+  flex: 20;
+}
+
+.borrow{
+  width: 80%;
+  height: 80vh;
+  flex: 80;
+  font-size: 2.2vh;
+}
+
+/* phần thân */
+
+.borrow h1{
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  font-size: 3vh;
+}
+
+.info-borrow-per{
+  display: flex;
+  margin-top: 5vh;
+  font-weight: bold;
+}
+
+.name{
+  display: flex;
+  margin-left: 5%;
+  width: 35%;
+}
+
+.name p{
+  width: 20%;
+}
+
+
+.class{
+  display: flex;
+  margin-left: 5%;
+  width: 15%;
+}
+
+.class p{
+  width: 20%;
+}
+
+.mssv{
+  display: flex;
+  margin-left: 5%;
+  width: 15%;
+}
+
+.mssv p{
+  width: 30%;
+}
+
+.name input{
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 80%;
+  outline: none;
+  font-size: 2vh;
+}
+
+.class input{
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+  width: 80%;
+  font-size: 2vh;
+}
+
+.mssv input{
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+  font-size: 2vh;
+}
+
+.content-2{
+  display: flex;
+  margin-left: 5%;
+  margin-top: 4vh;
+  font-weight: bold;
+}
+.tick{
+  width: 50%;
+}
+.tinh-trang{
+  /* width: 40%; */
+}
+
+.content-3{
+  margin-left: 5%;
+  margin-top: 1vh;
+  display: flex;
+}
+.pick{
+  width: 40%;
+  border-right: 1px solid #000;
+}
+
+.pick div{
+  margin-top: 1vh;
+}
+.pick label{
+  margin-left: 1vw;
+}
+
+.textbox{
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+
+.textbox input{
+  margin-left: 5%;
+  margin-top: 1vh;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+  font-size: 2vh;
+}
+.pick input{
+  cursor: pointer;
+}
+
+.cont-4{
+  display: flex;
+  margin-left: 5%;
+  margin-top: 5vh;
+}
+.cont-4 p{
+  font-weight: bold;
+}
+.cont-4 input{
+  margin-left: 3vw;
+  width: 3vw;
+  font-size: 2vh;
+}
+.cont-4 label{
+  margin-left: .5vw;
+}
+
+.content-5{
+  display: flex;
+  margin-left: 5%;
+  margin-top: 4vh;
+  font-weight: bold;
+}
+.content-5 input{
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+  margin-left: 1vw;
+  font-size: 2vh;
+}
+
+.time{
+  display: flex;
+}
+
+.content-5 label{
+  margin-left: 4vw;
+}
+
+.button{
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+}
+.button button{
+  width: 10%;
+  height: 5vh;
+  font-size: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lime;
+  box-shadow: none;
+  cursor: pointer;
+  border-radius: 30vw;
+}
+
+.button :hover{
+  background: limegreen;
+}
+
+/* media querry */
+
+@media screen and (max-width: 1200px){
+
+  .borrow{
+    width: 80%;
+    height: 80vh;
+    flex: 80;
+  }
+
+  .borrow h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+    font-size: 3vh;
+  }
+
+  .info-borrow-per{
+    margin-top: 3vh;
+  }
+
+  .name input{
+    font-size: 1.3vh;
+    width: 70%;
+  }
+
+  .name p{
+    font-size: 1.6vh;
+    width: 30%;
+  }
+
+  .class p{
+    font-size: 1.6vh;
+    width: 30%;
+  }
+  .class input{
+    font-size: 1.3vh;
+    width: 70%;
+  }
+
+
+  .mssv p{
+    font-size: 1.6vh;
+    width: 40%;
+  }
+  .mssv input{
+    font-size: 1.3vh;
+    width: 60%;
+  }
+
+  .tick{
+    font-size: 2vh;
+  }
+  .tinh-trang{
+    font-size: 2vh;
+  }
+
+  .pick label{
+    font-size: 1.8vh;
+  }
+
+  .textbox input{
+    font-size: 2vh;
+  }
+
+  .cont-4 p{
+    font-size: 1.5vh;
+  }
+
+  .cont-4 label{
+    font-size: 1.5vh;
+  }
+  .cont-4 input{
+    width: 2vw;
+    height: 2vh;
+    font-size: 1.3vh;
+    outline: none;
+  }
+  .content-5{
+    margin-top: 3vh;
+  }
+  .content-5 input{
+    font-size: 1.5vh;
+    margin-left: 2vw;
+    width: 80%;
+  }
+
+  .content-5 label{
+    margin-left: 2vw;
+    font-size: 1.5vh;
+  }
+
+  .content-5 p{
+    font-size: 1.8vh;
+  }
+
+  .button button{
+    width: 20%;
+    height: 5vh;
+    font-size: 3vh;
+    border-radius: 30vw;
+  }
+
+}
+
+
+
+
+
+
+

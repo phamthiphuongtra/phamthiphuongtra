@@ -1,0 +1,92 @@
+<app-header></app-header>
+<div class="constructer">
+  <div class="menu">
+    <app-menu></app-menu>
+  </div>
+  <div class="borrow">
+    <h1>ĐĂNG KÝ MƯỢN THIẾT BỊ</h1>
+    <div class="info-borrow-per">
+      <div class="name">
+        <p>Họ và tên:</p>
+        <input type="text" placeholder="Nhập họ và tên" [(ngModel)]="name" />
+      </div>
+      <div class="class">
+        <p>Lớp: </p>
+        <input type="text" placeholder="Nhập lớp" [(ngModel)]="classBorrow">
+      </div>
+      <div class="mssv">
+        <p>MSSV:</p>
+        <input type="text" placeholder="Nhập MSSV" [(ngModel)]="MSSVBorrow">
+      </div>
+    </div>
+    <div class="content-2">
+      <div class="tick">Chọn thiết bị bạn muốn mượn:</div>
+      <div class="tinh-trang">Tình trạng thiết bị</div>
+    </div>
+    <div class="content-3">
+      <div class="pick">
+        <div>
+          <input type="checkbox" [(ngModel)]="pen">
+          <label for=""> Bút</label>
+        </div>
+        <div>
+          <input type="checkbox" [(ngModel)]="wipes">
+          <label for=""> Giẻ lau</label>
+        </div>
+        <div>
+          <input type="checkbox" [(ngModel)]="projector">
+          <label for=""> Máy chiếu</label>
+        </div>
+        <div>
+          <input type="checkbox" [(ngModel)]="mic">
+          <label for=""> Micro</label>
+        </div>
+        <div>
+          <input type="checkbox" [(ngModel)]="connector">
+          <label for=""> Cổng kết nối</label>
+        </div>
+        <div>
+          <input type="checkbox" [(ngModel)]="powerOutlet">
+          <label for=""> Ổ cắm điện</label>
+        </div>
+        <div>
+          <input type="checkbox" [(ngModel)]="bottledWater">
+          <label for=""> Nước cho GV</label>
+        </div>
+      </div>
+      <div class="textbox">
+        <textarea name="status" id="" cols="30" rows="10"></textarea>
+      </div>
+    </div>
+    <div class="cont-4">
+      <p>Tổng số lượng thiết bị mượn( Nhập số lượng):</p>
+      <input type="text" [(ngModel)]="amount">
+      <label for="checkbox">  thiết bị</label>
+      <input type="text">
+      <label for="check-1"> chai nước</label>
+      <input type="text">
+      <label for="check-2"> bút xanh</label>
+      <input type="text">
+      <label for="check-3"> bút đỏ</label>
+    </div>
+    <div class="content-5">
+      <div class="time">
+        <p>Thời gian mượn:</p>
+        <input type="datetime-local" class="type-time" [(ngModel)]="borrowDate">
+      </div>
+      <div>
+        <label for="">Phòng mượn:</label>
+        <input type="text" [(ngModel)]="room">
+      </div>
+      <div>
+        <label>Số điện thoại người mượn:</label>
+        <input type="text" [(ngModel)]="phone">
+      </div>
+    </div>
+    <div class="button">
+      <button (click)="postData()">MƯỢN</button>
+    </div>
+  </div>
+</div>
+
+

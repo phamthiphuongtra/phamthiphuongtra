@@ -1,0 +1,45 @@
+<app-header></app-header>
+<div class="constructer">
+  <div class="menu">
+    <app-menu></app-menu>
+  </div>
+  <table class="return">
+    <h1>DANH SÁCH CHỜ TRẢ THIẾT BỊ</h1>
+    <div class="list">
+      <div class="title">
+        <div class="line"></div>
+        <div class="info">
+          <p style="width: 3%;">STT</p>
+          <p style="width: 13%;">Thời gian mượn</p>
+          <p style="width: 15%;">Họ và tên</p>
+          <p style="width: 3%;">Lớp</p>
+          <p style="width: 40%;">Thiết bị mượn</p>
+          <p style="width: 10%;">Phòng mượn</p>
+          <!-- <p style="width: 10%;">Số lượng</p> -->
+          <p style="width: 10%; border-right: none;"></p>
+        </div>
+        <div class="line"></div>
+      </div>
+      <div class="content">
+        <li *ngFor="let items of listReturn; index as i">
+          <div class="info-person">
+            <p style="width: 3%;">{{i+1}}</p>
+            <p style="width: 13%;">{{items.borrowedDate}}</p>
+            <p style="width: 15%;">{{items.name}}</p>
+            <p style="width: 3%;">{{items.class}}</p>
+            <p style="width: 40%;">{{devices}}</p>
+            <p style="width: 10%;">{{items.room}} </p>
+            <!-- <p style="width: 10%;"></p> -->
+            <input type="datetime-local" id="completionDate" [ngModel] = "localCompleteDate" placeholder="yyyy-MM-ddTHH:mm:ss" class="form-control" hidden/>
+            <p style="width: 10%;">
+              <button (click)="updateData(items)">TRẢ</button>
+            </p>
+          </div>
+          <div class="line"></div>
+        </li>
+      </div>
+    </div>
+  </table>
+</div>
+
+

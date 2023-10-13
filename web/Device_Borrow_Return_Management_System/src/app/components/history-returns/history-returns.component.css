@@ -1,0 +1,100 @@
+.constructer {
+  display: flex;
+  flex: 100;
+}
+
+.menu {
+  flex: 20;
+}
+
+.list-history{
+  width: 80%;
+  height: 80vh;
+  flex: 80;
+  font-size: 2.2vh;
+}
+
+/* content */
+
+.list-history h1{
+  display: flex;
+  justify-content: center;
+  margin-top: 3vh;
+  font-size: 3.5vh;
+}
+
+.list{
+  height: 70.5vh;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  margin-left: 5%;
+  margin-top: 3vh;
+  margin-right: 5%;
+
+}
+.line{
+  width: 100%;
+  border-top: 1px solid #000;
+}
+.info{
+  display: flex;
+  height: 4vh;
+  width: 100%;
+}
+.info p{
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-right: 1px solid #000; */
+}
+
+.content{
+  font-size: 1.8vh;
+}
+.info-person{
+  display: flex;
+  height: 4vh;
+  width: 100%;
+}
+.info-person p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-right: 1px solid #000; */
+}
+.info-person a{
+  background-color: goldenrod;
+  border: .5px solid #000;
+  border-radius: 30vw;
+  height: 2.8vh;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px){
+
+  .list-history h1{
+    font-size: 2.5vh;
+    margin-top: 2vh;
+  }
+
+  .info p{
+    font-size: 1.2vh;
+  }
+
+  .list{
+    height: 100vh;
+  }
+
+  .info-person p{
+    font-size: 1.2vh;
+  }
+
+  .info-person a{
+    width: 50%;
+  }
+
+}

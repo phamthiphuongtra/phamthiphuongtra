@@ -1,0 +1,26 @@
+<app-header></app-header>
+<div class="constructer">
+  <div class="menu">
+    <app-menu></app-menu>
+  </div>
+  <div class="lich-su">
+    <h1>THÔNG TIN MƯỢN/TRẢ THIẾT BỊ</h1>
+    <div class="content-1">
+      <p style="width: 50%;">Họ và tên: {{detail.name}}</p>
+      <p style="width: 25%;">Lớp: {{detail.class}} </p>
+      <p style="width: 25%;">MSSV: {{detail.studentCode}} </p>
+    </div>
+    <div class="content-2">
+      <p>Thiết bị đã mượn: {{devices}}</p>
+      <p>Phòng mượn: {{detail.room}}</p>
+      <p>Tình trạng khi mượn: {{detail.statusBefore || 'None'}} </p>
+      <p>Tình trạng khi trả: {{detail.statusAfter || 'None'}}</p>
+      <p>Số lượng mượn: {{detail.amountBorrow || 'None'}}</p>
+      <p>Số lượng trả: {{detail.amountReturn || 'None'}}</p>
+      <p>Thời gia mượn: {{detail.borrowedDate || 'None'}}</p>
+      <p>Thời gian trả: {{detail.returnDate || 'None'}}</p>
+      <p>Tình trạng: {{detail.status == "0" ? "Đã trả" : "Chưa trả"}}</p>
+    </div>
+  </div>
+</div>
+
